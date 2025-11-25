@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        /* 
+               570 + 470 + 128 = 1160
+        */
+
+        /* 
+            576 
+        */
+        .header{
+            border: 2px solid red;
+            max-width: 1160px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .img{
+            width: 500px;
+            height: 620px;
+            border: 2px solid black;
+        }
+        .text{
+            width: 572px;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid green;
+        }
+        @media (max-width: 768px) {
+            .header{
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .text{
+                flex-wrap: wrap;
+            }
+            .text .box{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="img">rasim</div>
+        <div class="text">
+            <div class="box">lorem2</div>
+            <div class="box">lorem2</div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
